@@ -10,7 +10,6 @@
 
 </head>
 <body>
-
   <!-- global -->
   <div class="global">
 
@@ -22,7 +21,7 @@
       <!-- main-header -->
       <div class="main-header">
 
-        <h1 id="Addtask">MY TODOLISTE</h1>
+        <h1>MY TODOLISTE</h1>
         <!-- bouttonrond -->
         <input type="button" class="bouttonrond" value="+">
 
@@ -32,8 +31,6 @@
           <div class="main-container">
             <!-- content -->
 
-
-
           <!-- content2 -->
           <div class="content2">
             <li>Take a shower</li><br>
@@ -41,7 +38,6 @@
             <li>Take a breakfast</li>
 
           </div>
-
 
           <!-- content3 -->
           <div class="content3">
@@ -59,8 +55,6 @@
             <hr class="separt2">
           </div>
 
-
-
           <!-- content4 -->
           <div class="content4">
             <li>Be at Becode on 9:00</li><br>
@@ -68,14 +62,11 @@
             <li>I need a real break</li>
           </div>
 
-
           <!-- next-container -->
           <div class="next-container">
             <li>Go to bus stop</li>
 
           </div>
-
-
 
           <!-- main-footer -->
           <div class="main-footer">
