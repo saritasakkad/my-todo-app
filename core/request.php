@@ -1,5 +1,10 @@
 <?php
 
+
+// voire river amendi a envoyer le insérer ici 
+
+
+
 include 'connexion.php';
 // Notre requete à la base de donnée
 // SELECT = prend moi; * = tout ;FROM = de quel tableau ? film = mettreLeNomDeVotreTable

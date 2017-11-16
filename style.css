@@ -208,9 +208,8 @@ li:first-line {
 #maincontainer2 {
     display: none;
 
-    background-color: #147;
-    width: 534px;
-    height: 738px;
+
+
 }
 /* content2 */
 
@@ -241,9 +240,9 @@ li:first-line {
 }
 .Clear-the-content2 {
     position: absolute;
-    top: 130px;
-    right: 35px;
+    top: 140px;
     font-size: 20px;
+    left: 470px;
 }
 .Clear-the-content2 li {
     border-bottom: 1px solid black;
@@ -252,6 +251,8 @@ li:first-line {
 /* contents4 */
 
 .contents4 {
+    position: absolute;
+    top: 361px;
     padding: 20px;
 }
 .contents4 h2 {} .contents4 ul {
@@ -267,27 +268,25 @@ li:first-line {
 /* content5 */
 
 .content5 {
-    position: relative;
+    position: absolute;
     padding: 20px;
-    top: -10px;
+    top: 445px;
 }
 .content5 li {
     display: inline;
     padding: 10px 10px;
 }
 #demo {
-    width: 100%;
-    height: auto;
-    position: relative;
-    left: 20px;
-    top: -25px;
+    position: absolute;
+    top: 535px;
+    padding: 20px;
 }
 /* main-footer2 */
 
 .main-footer2 {
-    top: -5px;
-    left: 0;
-    position: relative;
+    top: 790px;
+    position: absolute;
+    padding: 20px;
 }
 .main-footer2 p {
     top: 0;
