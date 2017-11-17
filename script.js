@@ -4,9 +4,7 @@ var datepickerDefault = new MtrDatepicker(
 	}
 );
 
-
 // shuitcher entre 2 pages
-
 
 var rajouter = document.getElementById('bouton');
 var maincontainer = document.getElementById('maincontainer');
