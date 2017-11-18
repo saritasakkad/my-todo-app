@@ -4,26 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <title>Todo app </title>
+  <!-- style.css  -->
   <link rel="stylesheet" href="style.css">
+  <!-- calandrier  -->
   <link rel="stylesheet" href="datepicker/dist/mtr-datepicker.min.css">
   <link rel="stylesheet" href="datepicker/dist/mtr-datepicker.clutterboard-theme.min.css">
 
 </head>
 <body>
+    <!-- global -->
     <div class="global">
-       <!-- Partie 1 =================@mmmm#mmmm@================== Partie 1 -->
+       <!-- Partie 1 =========@mmmm#mmmm@========= Partie 1 -->
        <!-- main -->
        <div class="main">
           <!-- main-header -->
           <div class="main-header">
              <h1>MY TODOLISTE</h1>
-             <!-- bouttonrond  <input type="button" id="bouttonrond" value="+">-->
+             <!-- bouton -->
              <img src="images/001-round.png" alt="icones" id="bouton">
           </div>
           <hr class="separt">
           <!-- main-container -->
           <div id="maincontainer">
-             <!-- content -->
+              <!-- content -->
              <!-- content2 -->
              <div class="content2">
                 <li>Take a shower</li>
@@ -63,7 +66,7 @@
              <div class="main-footer">
                 <hr class="separt3">
                 <ul class="list-item">
-                   <li>Show: All task</li>
+                   <li>Show: <span>All task</span></li>
                    <li>Todo task</li>
                    <li>Done task</li>
                 </ul>
@@ -114,11 +117,11 @@
              </div>
           </div>
        </div>
-       <!-- Partie 2 =================@mmmm#mmmm@================== Partie 2 -->
 
     </div>
-
+        <!-- calandrier  -->
      <script type="text/javascript" src="datepicker/dist/mtr-datepicker.min.js"></script>
+     <!-- script.js  -->
      <script type="text/javascript" src="script.js"></script>
   </body>
   </html>

@@ -1,3 +1,4 @@
+// calandrier
 var datepickerDefault = new MtrDatepicker(
 	{
 	  target: "demo",
@@ -5,7 +6,6 @@ var datepickerDefault = new MtrDatepicker(
 );
 
 // shuitcher entre 2 pages
-
 var rajouter = document.getElementById('bouton');
 var maincontainer = document.getElementById('maincontainer');
 var maincontainer2 = document.getElementById('maincontainer2');
