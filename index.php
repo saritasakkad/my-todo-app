@@ -12,6 +12,7 @@
 
 </head>
 <body>
+
     <!-- global -->
     <div class="global">
        <!-- Partie 1 =========@mmmm#mmmm@========= Partie 1 -->
@@ -117,8 +118,8 @@
              </div>
           </div>
        </div>
-
     </div>
+    
         <!-- calandrier  -->
      <script type="text/javascript" src="datepicker/dist/mtr-datepicker.min.js"></script>
      <!-- script.js  -->
