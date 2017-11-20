@@ -25,7 +25,7 @@ html {
 /* main */
 .main {
     width: 540px;
-    height: 840px;
+    height: 100%;
     border: solid;
     float: left;
     margin-right: auto;
@@ -181,6 +181,7 @@ li:first-line {
 
 #maincontainer2 {
     display: none;
+    position: relative;
 }
 
 /* content2 */
@@ -202,9 +203,9 @@ li:first-line {
 }
 .Clear-the-content2 {
     position: absolute;
-    top: 140px;
+    top: 15px;
     font-size: 20px;
-    left: 470px;
+    left: 455px;
 }
 .Clear-the-content2 li {
     border-bottom: 1px solid black;
@@ -213,8 +214,6 @@ li:first-line {
 /* contents4 */
 
 .contents4 {
-    position: absolute;
-    top: 361px;
     padding: 20px;
 }
 .contents4 h2 {} .contents4 ul {
@@ -230,9 +229,7 @@ li:first-line {
 /* content5 */
 
 .content5 {
-    position: absolute;
     padding: 20px;
-    top: 445px;
 }
 .content5 li {
     display: inline;
@@ -240,19 +237,17 @@ li:first-line {
 }
 
 /*  calandrier */
-#demo {
-    position: absolute;
-    top: 535px;
-    padding: 20px;
+#demo, #demo2 {
+    display: inline-block;
 }
 /* main-footer2 */
 
 .main-footer2 {
-    top: 790px;
     position: absolute;
+    bottom: 0; left: 0; right: 0;
     padding: 10px;
     margin: 10px;
-    left: 100px;
+
 }
 .main-footer2 p {
     top: 0;

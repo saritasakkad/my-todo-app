@@ -5,6 +5,12 @@ var datepickerDefault = new MtrDatepicker(
 	}
 );
 
+var datepickerDefault2 = new MtrDatepicker(
+	{
+	  target: "demo2",
+	}
+);
+
 // shuitcher entre 2 pages
 var rajouter = document.getElementById('bouton');
 var maincontainer = document.getElementById('maincontainer');
@@ -25,3 +31,5 @@ rajouter.style.transform = 'rotate(0deg)';
 x = true;
 }
 }
+
+//
