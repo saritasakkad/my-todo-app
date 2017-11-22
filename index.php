@@ -74,14 +74,15 @@
                 </div>
             </div>
             <div id="maincontainer2">
-                <form action="request.php" method="post">
+                <form action="core/request.php" method="POST">
+                    <input type="hidden" name="action" value="ajouter">
                     <!-- content2 -->
                     <!-- content3 -->
                     <div class="contents3">
                         <h2>TITLE</h2>
                         <br>
                         <h3>My todo title</h3>
-                        <input type="text" name="todotitle">
+                        <input type="text" name="task_title">
                         <br>
                         <br>
                         <div class="Clear-the-content2">
@@ -90,7 +91,7 @@
                         <h2>DESCRIPTION</h2>
                         <br>
                         <h3>My todo description</h3>
-                        <input type="text" name="tododescription">
+                        <input type="text" name="task_description">
                         <br>
                     </div>
                     <!-- content4 -->
@@ -98,14 +99,14 @@
                         <h2>START AT</h2>
                         <br>
                         <!-- calandrier -->
-                        <div id="demo"></div>
+                        <div name="task_start" id="demo"></div>
                     </div>
                     <!-- content5 -->
                     <div class="content5">
                         <h2>END AT</h2>
                         <br>
                         <!-- calandrier -->
-                        <div id="demo2"></div>
+                        <div name="task_end" id="demo2"></div>
 
                     </div>
                     <!-- calandrier -->
@@ -113,8 +114,9 @@
                     <!-- main-footer2 -->
                     <div class="main-footer2">
                         <ul class="list-item">
-                            <li>Add task and create one</li>
-                            <li>  Add task</li>
+                            <li>
+                                Add task and create one</li>
+                            <li><button type="submit" name="addTask" value="addTask">Add task</button></li>
                         </ul>
                     </div>
                 </form>
