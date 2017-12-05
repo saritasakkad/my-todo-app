@@ -73,6 +73,10 @@ img {}
     text-decoration: line-through;
     font-size: 25px;
 }
+#content11 h1 {
+    color: red;
+}
+
 /* content3 */
 
 .content3 {

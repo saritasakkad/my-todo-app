@@ -32,4 +32,32 @@ x = true;
 }
 }
 
-//
+// ajax js php
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  let data = JSON.parse (this.responseText)
+	  setTask(data);
+    }
+  };
+  xhttp.open("POST", "./core/request.php", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("getAllTask=hello");
+}
+loadDoc()
+
+// Afficher les taches a faire dqns
+
+function setTask(tasks){
+	// Boucle dans chaque taches
+	for (let task of tasks) {
+		//Pour chacune des taches
+		var div = document.createElement('div'); // Crée une div
+		div.id="content"+task.task_id; // Donne un id à cette div
+		div.innerHTML = "<h1>"+task.task_title+"</h1>"; // Lui donne un contenu
+
+		document.getElementById('maincontainer').appendChild(div); // Ajoute cette div à #maincontainer
+	}
+}

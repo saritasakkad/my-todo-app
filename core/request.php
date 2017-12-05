@@ -1,18 +1,11 @@
 <?php
 include 'connexion.php';
 
-//dd($_POST);
-// //ajouter depart
-// if($_POST['action']=="ajouter");
-// die();
 //
-// if (!empty($_POST)&&isset($_POST['addTask'])) {
-// 	addTask();
-// 	// var_dump($_POST);
-// }
-// //ajouter arriver
 
-//eldebaron
+
+
+//ajouter a la bdd debut
 if (!empty($_POST)&&isset($_POST['addTask'])) {
 	debug($_POST);
 	addTask();
@@ -34,25 +27,44 @@ function addTask(){
 		echo "test";
 
 		$reponse->execute();
-
+		header('Location: ../index.php');//permet de raffrechier
 	} catch (Exception $e) {
 		echo "ERREUR: ";
 		debug($e->getMessage());
 	};
 }
+//ajouter a la bdd fin
 
-//eldebaron
+//Delete a la bdd debut
 
+if (!empty($_POST)&&isset($_POST['delete'])) {
+	deleteTask($_POST['delete']);
+}
 
+function delete($id){
 
+	$query = "DELETE FROM task WHERE id = :id limit 1";
 
+	$reponse = $bdd->prepare($query);
+	$reponse->bindParam(':id',$id,PDO::PARAM_INT);
+
+	$reponse->execute();
+
+	// if ($reponse->execute()) {
+	// 	header('Location: ../index.php');
+	// } else {
+	// 	echo "OOOPS!";
+	// }
+}
+//Delete a la bdd fin
 
 if( isset( $_POST['getAllTask'] ) ){
   $query = "SELECT * FROM task";
   $query = $bdd->query($query);
   $query->execute();
-  $reponse = $query->fetchAll();
+  $reponse = $query->fetchAll(PDO::FETCH_ASSOC);
   // var_dump($reponse);
+
   echo json_encode($reponse);
 }
 
@@ -67,3 +79,10 @@ if( isset( $_POST['getTask'] ) ){
   // var_dump($reponse);
   echo json_encode($reponse);
 }
+
+//afiiche dans la première page ce qu'on a ajouter dans la bdd
+
+$query=$bdd->prepare('SELECT * FROM task');
+$query->execute();
+$taches = $query->fetchAll(PDO::FETCH_ASSOC);
+// fin d'afiichache dans la première page ce qu'on a ajouter dans la bdd

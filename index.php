@@ -28,20 +28,24 @@
             <!-- main-container -->
             <div id="maincontainer">
                 <!-- content -->
-                <!-- content2 -->
-                <div class="content2">
-                    <li>Take a shower</li>
-                    <br>
-                    <li>Make my bag</li>
-                    <br>
-                    <li>Take a breakfast</li>
+                <!-- content2 <li>Take a shower</li>
+                <br>
+                <li>Make my bag</li>
+                <br>
+                <li>Take a breakfast</li> id="todo" id="donetask" -->
+                <div id="content2" class="content2">
+
+                    
+
                 </div>
                 <!-- content3 -->
                 <div class="content3">
-                    <li>Go to bus stop</li>
+                          <li>Go to bus stop</li>
                     <ul class="list-item">
-                        <span>Delete</span>
-                        <span>Edit</span>
+                        <!-- Delete-->
+                        <span><button type="submit" name="delete" value="id">Delete</button></span>
+                        <!-- Edit -->
+                        <span><button type="submit" name="edit" value="id">Edit</button></span>
                     </ul>
                     <div class="description">
                         <p>My bus arrive on 7:30 l'il be on 7:15 at bus stop</p>
@@ -67,9 +71,9 @@
                 <div class="main-footer">
                     <hr class="separt3">
                     <ul class="list-item">
-                        <li>Show: <span>All task</span></li>
-                        <li>Todo task</li>
-                        <li>Done task</li>
+                        <li>Show: <span><button type="submit" name="Alltask" value="id">All task</button></span></li>
+                        <li><button type="submit" name="Todotask" value="id">Todo task</button></li>
+                        <li><button type="submit" name="Donetask" value="id">Done task</button></li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +90,7 @@
                         <br>
                         <br>
                         <div class="Clear-the-content2">
-                            <li>Clear</li>
+                            <li><button type="submit" name="clear" value="id">Clear</button></li>
                         </div>
                         <h2>DESCRIPTION</h2>
                         <br>
@@ -116,7 +120,7 @@
                         <ul class="list-item">
                             <li>
                                 Add task and create one</li>
-                            <li><button type="submit" name="addTask" value="addTask">Add task</button></li>
+                            <li><button id="Addt" type="submit" name="addTask" value="addTask">Add task</button></li>
                         </ul>
                     </div>
                 </form>
