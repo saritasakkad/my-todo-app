@@ -33,9 +33,12 @@
                 <li>Make my bag</li>
                 <br>
                 <li>Take a breakfast</li> id="todo" id="donetask" -->
+                <!-- <div id="content11">
+                    <h1></h1>
+                </div> -->
                 <div id="content2" class="content2">
+                    <h2 id="titre"></h2>
 
-                    
 
                 </div>
                 <!-- content3 -->
@@ -120,7 +123,7 @@
                         <ul class="list-item">
                             <li>
                                 Add task and create one</li>
-                            <li><button id="Addt" type="submit" name="addTask" value="addTask">Add task</button></li>
+                            <li><button type="submit" name="addTask" value="addTask">Add task</button></li>
                         </ul>
                     </div>
                 </form>

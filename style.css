@@ -73,9 +73,11 @@ img {}
     text-decoration: line-through;
     font-size: 25px;
 }
-#content11 h1 {
-    color: red;
+
+#content2 h1{
+    /*color: red;*/
 }
+
 
 /* content3 */
 
@@ -267,4 +269,15 @@ li:first-line {
 .main-footer2 li {
     display: inline;
     padding: 10px 10px 10px;
+}
+
+/*for ajax */
+
+ h1 {
+    color: #147;
+}
+
+ h2 {
+
+    color: #a5a5e4;
 }
